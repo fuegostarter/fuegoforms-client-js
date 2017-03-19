@@ -1,0 +1,14 @@
+dist
+node_modules
+coverage
+
+# OS files
+.DS_STORE
+
+# Git merge conflicts
+*.orig
+
+# Logs
+logs
+*.log
+npm-debug.log*

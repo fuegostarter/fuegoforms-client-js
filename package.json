@@ -1,0 +1,64 @@
+{
+  "name": "fuegoforms-js",
+  "version": "1.0.0",
+  "description": "Fast, flexible forms as a service on the cheap!",
+  "main": "dist/fuegoforms.js",
+  "module": "dist/fuegoforms.mjs",
+  "jsnext:main": "dist/fuegoforms.mjs",
+  "scripts": {
+    "prebuild": "standard --verbose | snazzy",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "posttest": "codecov",
+    "prepublish": "npm test"
+  },
+  "repository": "feugostarter/fuegoforms-js",
+  "keywords": [
+    "es6",
+    "modules",
+    "rollup",
+    "bundle",
+    "browser"
+  ],
+  "contributors": [
+    "Tim Growney <tim@fuegostarter.com>",
+    "Bogdan Vitoc <bogdan@fuegostarter.com> (https://twitter.com/bogdanvitoc)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuegostarter/fuegoforms-js/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "mocha": true
+    }
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "homepage": "https://www.fuegoforms.com",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "babelrc-rollup": "^3.0.0",
+    "codecov": "^2.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "rollup": "^0.37.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-istanbul": "^1.1.0",
+    "rollup-watch": "^2.5.0",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.2"
+  }
+}
