@@ -11,8 +11,7 @@
     "watch": "rollup -c -w",
     "pretest": "npm run build",
     "test": "mocha",
-    "posttest": "codecov",
-    "prepublish": "npm test"
+    "posttest": "codecov"
   },
   "repository": "feugostarter/fuegoforms-js",
   "keywords": [
